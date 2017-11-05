@@ -34,7 +34,7 @@ Let's save some hassle in the future. First, let's figure out where that `virtua
 
 Then get and setup [direnv](https://direnv.net/). Make a `.envrc` file in this directory and add the following lines to it.
 
-
+    export WORKON_HOME=~/.virtualenvs
     export VIRTUALENVWRAPPER_PYTHON=/python3/location
     source /virtualenvwrapper.sh/location/
 
