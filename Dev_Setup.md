@@ -25,7 +25,7 @@ Let's get Django setup. To do that, you need Python3. If you don't have Python3 
 Got Python? Cool, let's move on. Let's get a virtualenv setup.
 
     > pip3 install virtualenv virtualenvwrapper
-    > cd /wherever/you/cloned/the/dev/branch/personal-website-django/
+    > cd /wherever/you/cloned/the/dev/branch/diction_django_site/
 
 Let's save some hassle in the future. First, let's figure out where that `virtualenvwrapper` got installled.
 
@@ -34,25 +34,25 @@ Let's save some hassle in the future. First, let's figure out where that `virtua
 
 Then get and setup [direnv](https://direnv.net/). Make a `.envrc` file in this directory and add the following lines to it.
 
-
+    export WORKON_HOME=~/.virtualenvs
     export VIRTUALENVWRAPPER_PYTHON=/python3/location
     source /virtualenvwrapper.sh/location/
 
-Then source it and make your virtual environment:
+Then allow the direnv and make your virtual environment:
 
-    > source .envrc
-    > mkvirtualenv --python=/usr/local/bin/python3 personal-website-django
+    > direnv allow
+    > mkvirtualenv --python=/usr/local/bin/python3 diction_django_site
 
 Running `python` in this environment should point to python3, here are the commands you need in the future.
 
-    > cd /wherever/you/cloned/the/dev/branch/personal-website-django/
-    > workon personal-website-django
+    > cd /wherever/you/cloned/the/dev/branch/diction_django_site/
+    > workon diction_django_site
     Do whatever, then to get out of it
     > deactivate
 
 While we're at it, let's add this directory to the `PYTHONPATH`:
 
-    > add2virtualenv /wherever/you/cloned/the/dev/branch/personal-website-django
+    > add2virtualenv /wherever/you/cloned/the/dev/branch/diction_django_site
 
 ## Django
 
@@ -65,5 +65,11 @@ And give it a whirl,
     > python manage.py runserver
 
 And checkout `http://localhost:8000`. Congrats, we have a Django Hello World.
+
+## Linter
+
+You're welcome to use whatever linter you want. For our purposes, we're doing `pep8`:
+
+    > pip3 install pycodestyle
 
 To be continued...
