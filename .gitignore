@@ -1,0 +1,9 @@
+diction_django_site/node_modules
+.envrc
+.DS_Store
+.idea/diction-django-site.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+*.pyc
+*.pyc
