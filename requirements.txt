@@ -3,3 +3,10 @@ pycodestyle==2.3.1
 lxml==4.1.1
 requests==2.18.4
 django-cors-headers==2.1.0
+# possible requirements for SSL
+django-sslserver==0.20
+pyOpenSSL==17.5.0
+ndg-httpsclient==0.4.3
+pyans1
+# deploy requirements
+uwsgi==2.0.15
