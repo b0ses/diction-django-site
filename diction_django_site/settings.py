@@ -25,13 +25,14 @@ SECRET_KEY = '@7xccb!q%7(cg5+&8h61s2gityk3mwgmw+7)btzqav-f&dba=#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'www.dictionpractice.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'corsheaders',
+    'sslserver',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
